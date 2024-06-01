@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a su Sistema de Agendas</h1>
+</div>
+
+<div class="text-center mt-5">
+    <h2>Gestión de Agendas</h2>
+    <p>Elige una opción para gestionar:</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Clientes</h3>
+                    <p class="card-text">Administre y vea la información de sus clientes.</p>
+                    <a href="@Url.Action("Index", "Clientes")" class="btn btn-primary">Ir a Clientes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Empleados</h3>
+                    <p class="card-text">Administre y vea la información de sus empleados.</p>
+                    <a href="@Url.Action("Index", "Empleados")" class="btn btn-primary">Ir a Empleados</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
